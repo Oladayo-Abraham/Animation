@@ -1,0 +1,61 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation-name: dynam;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dynam{
+    0%{
+        background-color: red;
+    }
+    25%{
+        background-color: blue;
+    }
+    50%{
+        background-color: yellow;
+    }
+    75%{
+        background-color: aqua;
+    }
+    100%{
+        background-color:blueviolet;
+    }
+}
+#text{
+    animation-name: root;
+    animation-duration: 5s;
+    font-size: 40px;
+    animation-iteration-count: infinite;
+}
+@keyframes root{
+    0%{
+        color: red;
+    }
+    25%{
+        color: blue;
+    }
+    50%{
+        color: yellow;
+    }
+    75%{
+        color: aqua;
+    }
+    100%{
+        color:blueviolet;
+    }
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: width 4s,height 4s, transform 2s;
+}
+.box:hover{
+    width: 400px;
+    height: 400px;
+    transform: rotate(360deg);
+}
